@@ -24,6 +24,10 @@
 				background-color: #f0f3f9;
 				padding: 5px 10px;
 			}
+			
+			span {
+				display: inline-block;
+			}
 		</style>
 		<script type="text/javascript">
 		</script>
@@ -32,7 +36,10 @@
 	<body>
 		<p class="ltr">
 			<button>确定</button><button>取消</button><br />
+			<span>span1</span><span>span2</span>
 		</p>
 	</body>
-
+<!--改变的是内联元素块的左右顺序: 如<img>, <button>, <input>, inline-block
+	注意  a 和 span 是行内元素，需声明为inline-block才可以使用direction
+-->
 </html>
